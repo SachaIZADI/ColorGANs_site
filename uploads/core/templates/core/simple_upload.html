@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+{% load static %}
+
+{% block content %}
+<center>
+	{% if uploaded_file_url %}
+    <!-- p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p -->
+    <!-- <meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=mDFBTdToRmw" /> -->
+	<center>File uploaded!</center>
+    <img src="https://png.pngtree.com/svg/20170330/web_success_9814.png" width="128" height="128" class="center">
+  {% endif %}
+
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+
+{% if uploaded_file_url %} 
+	<img src="http://www.growthengineering.co.uk/wp-content/uploads/2014/10/Magic-rabbit-out-of-a-hat-300x300.png" width="128" height="128" class="center">
+	<center>Now you are ready to do some magic!</center>
+  <button type="submit">Make Magic!</button>
+ {% endif %}
+
+  
+ 
+</center>
+
+  <!-- <p><a href="{% url 'home' %}">Return to home</a></p> -->
+{% endblock %}
