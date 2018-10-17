@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 
 <style>
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.img_central {
+    /*display: block;*/
+    margin: 0 auto;
 }
 </style>
 
@@ -12,31 +11,18 @@ img {
 
 {% block content %}
 <h2>
-<center>Generative Adversarial Networks for image coloring</center>
+<center>Generative Adversarial Networks for Image Coloring</center>
 </h2>
 
+<center>
 
-<!-- <table>
-  <ul>
-    <li>
-      <a href="{% url 'simple_upload' %}">Simple Upload</a>
-    </li>
-    <li>
-      <a href="{% url 'model_form_upload' %}">Model Form Upload</a>
-    </li>
-  </ul>
-</table> -->
+<img src="https://phillipi.github.io/pix2pix/images/teaser_v3.png" alt="Smiley face" width="1000" height="400">
+<p>
+<img src="http://blogs.ionis-group.com/epita/media/piscine-master-of-science-big-data-for-business-etudiants-ecoles-hec-polytechnique-epita-innovation-2016_02.jpg" alt="Smiley face" width="400" height="150" align="bottom">
+</p>
+</center>
 
-<!--   <p>Uploaded files:</p>
-  <ul>
-    {% for obj in documents %}
-      <li>
-        <a href="{{ obj.document.url }}">{{ obj.document.name }}</a>
-        <small>(Uploaded at: {{ obj.uploaded_at }})</small>
-      </li>
-    {% endfor %}
-  </ul> -->
-  <img src="https://cdn-images-1.medium.com/max/1600/1*GEIe5Hu5nuoLEMKdzTqbgg.jpeg" width="80%" height="300" class="center">
-  <form method="post" enctype="multipart/form-data">
+
+  <!-- <form method="post" enctype="multipart/form-data"> -->
   
 {% endblock %}

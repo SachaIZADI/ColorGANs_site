@@ -1,4 +1,6 @@
-<style>
+
+<!-- Simple list style: -->
+<!-- <style>
 ul.dashed {
 	width: 180px;
     /*height: 100px;*/
@@ -6,12 +8,155 @@ ul.dashed {
     border: 1px solid #E2CAE3;
     border-radius: 22px;
     }
+</style> -->
+
+<!-- ============================= -->
+
+<!-- Sticky navbar style: -->
+
+<!-- <style>
+body {
+    font-size: 28px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style> -->
+
+<!-- ============================= -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<!-- Horizontal navbar style: -->
+<style>
+ul.my_style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+li.my_style {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+/*li a:hover:not(.active) {
+    background-color: #ddd;
+}*/
+
+/*li a.active {
+    color: white;
+    background-color: #4CAF50;
+}*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 </style>
-<ul id="nav" class="dashed"><!-- 
+
+
+</head>
+
+<body>
+
+<!-- ============================= -->
+
+
+
+
+<!-- <ul id="nav" class="dashed">
 	Site content: -->
-	<li><a href="/uploads/description/">Project Description</a></li>
+<ul id="nav" class="my_style">
+<!-- <ul> -->
+	<li class="my_style"><a href="/uploads/description/">Project Description</a></li>
 	<!-- <li><a href="{% url 'simple_upload' %}">Upload Data</a></li> -->
-	<li><a href="/uploads/simple/">Make magic here</a></li>
-	<li><a href="/uploads/us/">More about Us</a></li>
-	<li><a href="{% url 'home' %}">Home</a></li>
+	<li class="my_style"><a href="/uploads/simple/">Make magic here</a></li>
+	<li class="my_style"><a href="/uploads/us/">More about Us</a></li>
+	<li class="my_style"><a href="/uploads/refs/">Some useful links</a></li>
+	<li style="float:right"><a href="{% url 'home' %}">Home</a></li> 
 </ul>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

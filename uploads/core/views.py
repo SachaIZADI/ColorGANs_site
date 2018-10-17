@@ -46,3 +46,6 @@ def us(request):
 
 def templates(request):
     return render(request, "core/templates.html")
+
+def refs(request):
+    return render(request, "core/refs.html")

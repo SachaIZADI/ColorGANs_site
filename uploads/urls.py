@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^uploads/form/$', views.model_form_upload, name='model_form_upload'),
     url(r'^uploads/description/$', views.description, name='description'),
     url(r'^uploads/us/$', views.us, name='us'),
+    url(r'^uploads/refs/$', views.refs, name='refs'),
     url(r'^admin/', admin.site.urls),
 ]
 
