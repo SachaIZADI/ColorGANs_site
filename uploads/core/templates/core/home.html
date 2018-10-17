@@ -1,7 +1,19 @@
 {% extends 'base.html' %}
 
+<style>
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+{%load static%}
+
 {% block content %}
-<center>Welcome to our project website!</center>
+<h2>
+<center>Generative Adversarial Networks for image coloring</center>
+</h2>
 
 
 <!-- <table>
@@ -15,7 +27,7 @@
   </ul>
 </table> -->
 
-  <!-- <p>Uploaded files:</p>
+<!--   <p>Uploaded files:</p>
   <ul>
     {% for obj in documents %}
       <li>
@@ -24,4 +36,7 @@
       </li>
     {% endfor %}
   </ul> -->
+  <img src="https://cdn-images-1.medium.com/max/1600/1*GEIe5Hu5nuoLEMKdzTqbgg.jpeg" width="80%" height="300" class="center">
+  <form method="post" enctype="multipart/form-data">
+  
 {% endblock %}

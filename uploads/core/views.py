@@ -15,9 +15,12 @@ def simple_upload(request):
     if request.method == 'POST' and request.FILES['myfile']:
         myfile = request.FILES['myfile']
         fs = FileSystemStorage()
+        # fs.
         filename = fs.save(myfile.name, myfile)
+        # print(filename)
         uploaded_file_url = fs.url(filename)
-        return render(request, 'core/simple_upload.html', {
+        # print(uploaded_file_url)
+        return render(request, 'core/make_magic.html', {
             'uploaded_file_url': uploaded_file_url
         })
     return render(request, 'core/simple_upload.html')
