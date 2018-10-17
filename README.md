@@ -1,4 +1,4 @@
-# Simple File Upload Example
+# ColorGANs website 
 
 Web-site for a Deep-Learning project
 
