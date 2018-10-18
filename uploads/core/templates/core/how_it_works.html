@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}
+How it works
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .description_titles {
+        color: #050404;
+        font-family: sans-serif;
+        text-align:center;
+    }   
+
+    .text {
+        color: #181818;
+        font-family: sans-serif;
+        text-align:center;
+    }
+
+    .bloc1 {
+        background-color:#DCD5D5;
+        clear:both;
+    }   
+
+    .bloc2 {
+        background-color:##FAF8F8;
+        clear:both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+    }   
+</style>
+
+<div class='text'>
+
+<div class='bloc1'>
+</br>
+</br>
+
+<p>Our website uses an API that sends your black and white picture to the ColorGAN package hosted on GitHub.
+    This package contains a pre-trained model and your picture goes through a predict
+    function that outputs the colorised image. This colorised image is returned to you and you can now use it to show 
+    your friends and family.
+    The package makes use of a common deep learning algorithm: conditional Generative Adversarial Networks. 
+</p>
+
+</br>
+</div>
+
+
+<h1>Generative Adversarial Networks</h1>
+<p>Generative Adversarial Networks (GAN) are a class of deep learning methods.
+    It consists of two networks that are in competition with each other in a game theory scenario.
+    The first network, the generator, generates an image while the second, the discriminator, needs to detect
+    whether the input image is real or generated. 
+    In our case, we are working with a conditional GAN that is the generator is given an input black and white image 
+    from which to generate the colored image.  
+</p>
+
+<div id="attachment_965" class="wp-caption aligncenter">
+
+            <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/4/1539872741-screen-shot-2018-10-18-at-15-35-16.png"
+            width="800" height="400" align="center" />
+		</a>
+
+
+    </div>
+    
+
+<p> The Generator's job is to learn how to produce real looking colorized versions so that the 
+    Discriminator can't distinguish between the generated image and the real one.
+    The Discriminator needs to keep up with the Generator in order not to be fooled by its improvements.
+    Eventually, the Generator learns well the underlying distribution of color images data and 
+    is really good at generating colorised versions of black and white images.
+</p>
+</br>
+
+<div class='bloc1'>
+</br>
+<h1>Our model</h1>
+<p> Our model was trained on a library of more than 10 000 human portraits. The loss used is Binary Cross Entropy 
+    for both the Generator and Discriminator to which we add a L1 loss for the Generator to obtain sharper images. 
+    The models were trained using an Adam optimizer  of learning rate 1e-4 and 1e-3 respectively. 
+    The final layers of our neurals network are shown below.
+</p>
+</br>
+</div>
+</br>
+
+<div id="attachment_965" class="wp-caption aligncenter">
+
+            <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/4/1539879683-screen-shot-2018-10-18-at-18-20-59.png"
+            width="900" height="550" align="center" />
+
+</div>
+</br>
+<div id="attachment_965" class="wp-caption aligncenter">
+
+            <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/4/1539879497-screen-shot-2018-10-18-at-18-17-59.png"
+            width="700" height="500" align="center" />
+
+</div>
+
+</div>
+
+{% endblock %}

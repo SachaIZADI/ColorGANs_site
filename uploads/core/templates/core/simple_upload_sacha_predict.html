@@ -4,7 +4,9 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    -webkit-animation-delay: 20s;
 }
+
 </style>
 
 {% load static %}
@@ -13,16 +15,17 @@ img {
 <center>
 
 
-  <img src="/media/GANImage" width="128" height="128" class="center" vspace="50">
+
+  <img src="/media/SDIM0236.jpg" width="428" height="428" class="center" vspace="50">
+  <img src="/media/new.png" width="428" height="428" class="center" vspace="50" -webkit-animation-delay: 5s;>
+  
 
   <h2>Here is your result!</h2>
-  <!-- {{uploaded_file}} -->
-  <!-- {{url_to_image}} -->
+
   
 
   
  
 </center>
 
-  <!-- <p><a href="{% url 'home' %}">Return to home</a></p> -->
 {% endblock %}

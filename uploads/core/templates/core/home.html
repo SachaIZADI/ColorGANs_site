@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 
 <style>
+
+.description_titles {
+		color: #050404;
+		font-family: sans-serif;
+		text-align:center;
+	}	
+
+
 .img_central {
     /*display: block;*/
     margin: 0 auto;
@@ -10,18 +18,28 @@
 {%load static%}
 
 {% block content %}
-<h2>
-<center>Generative Adversarial Networks for Image Coloring</center>
-</h2>
+
+<body>
+
+<h1 class= 'description_titles'>
+<center>Generative Adversarial Networks for Image Colorization</center>
+</h1>
+
+
+</br>
 
 <center>
 
-<img src="https://phillipi.github.io/pix2pix/images/teaser_v3.png" alt="Smiley face" width="1000" height="400">
-<p>
-<img src="http://blogs.ionis-group.com/epita/media/piscine-master-of-science-big-data-for-business-etudiants-ecoles-hec-polytechnique-epita-innovation-2016_02.jpg" alt="Smiley face" width="400" height="150" align="bottom">
-</p>
+<img src="https://phillipi.github.io/pix2pix/images/teaser_v3.png" alt="Image Colorization" width="900" height="350">
+
+</br>
+</br>
+</br>
+<img src="http://blogs.ionis-group.com/epita/media/piscine-master-of-science-big-data-for-business-etudiants-ecoles-hec-polytechnique-epita-innovation-2016_02.jpg" alt="Partner Schools" width="270" height="100" align="bottom">
+
 </center>
 
+</body>
 
   <!-- <form method="post" enctype="multipart/form-data"> -->
   

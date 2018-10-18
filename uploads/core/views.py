@@ -15,6 +15,9 @@ def home(request):
     documents = Document.objects.all()
     return render(request, 'core/home.html', { 'documents': documents })
 
+def how_it_works(request):
+    return render(request, 'core/how_it_works.html')
+
 
 def simple_upload(request):
     if request.method == 'POST' and request.FILES['myfile']:
@@ -35,16 +38,16 @@ def simple_upload(request):
         #     'uploaded_file_url': r.text
         # })
         # ================================================
-        myfile = request.FILES['myfile']
-        r = requests.post('http://127.0.0.1:5000/return_image', files={'image': myfile})
-        from PIL import Image
-        import io
-        image2 = r.content
-        image2 = Image.open(io.BytesIO(image2))
-        image2.save("media/GANImage", format='PNG')
+        # myfile = request.FILES['myfile']
+        # r = requests.post('http://127.0.0.1:5000/return_image', files={'image': myfile})
+        # from PIL import Image
+        # import io
+        # image2 = r.content
+        # image2 = Image.open(io.BytesIO(image2))
+        # image2.save("media/GANImage", format='PNG')
 
         return render(request, 'core/simple_upload_sacha_predict.html', {
-            'uploaded_file': image
+            # 'uploaded_file': image2
             # 'url_to_image': image_url
         })
     return render(request, 'core/simple_upload.html')

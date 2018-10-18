@@ -5,72 +5,97 @@ Description
 {% endblock %}
 
 {% block content %}
-<section class="entry-content ">
-	<h2>What we do?</h2>
-	<p>Some cool stuff.</p>
 
-<p>Some cool stuff:</p>
+<style>
+	.description_titles {
+		color: #050404;
+		font-family: sans-serif;
+		text-align:center;
+	}	
 
-<p>
-<h3>Header 2</h3>
-<p style="text-indent: 1.5em">Some cool stuff.</p>
-<h3>Header 3</h3>
-<p style="text-indent: 1.5em">Some cool stuff.</p>
-<h3>Header 4</h3>
-<p style="text-indent: 1.5em">Some cool stuff.</p>
-<p style="text-indent: 1.5em">
-Some cool stuff.
-</p>
-<p style="text-indent: 1.5em">
-Some cool stuff.</p>
-<h3>Header 5</h3>
-<p style="text-indent: 1.5em">Some cool stuff.</p>
+	.text {
+		color: #181818;
+		font-family: sans-serif;
+		text-align:center;
+	}
 
-<h3>Header 6</h3>
+	.bloc1 {
+		background-color:#DCD5D5;
+		clear:both;
+	}	
 
+	.bloc2 {
+		background-color:##FAF8F8;
+		clear:both;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 55%;
+	}	
+</style>
+
+<body bgcolor = "#FAF8F8">
+
+<div class = 'text'>
+
+<div class = 'bloc1'>
+	<br/>
+<h1 class='description_titles'>What we do</h1>
+	<p>You're an avid photographer and you want to have some fun playing with your clich&eacute;s?</p>
+	<p>You have an old Black and White photo and you would like to bring it a new life? </p>
+	<p>You are only a few clicks away! </p>
+	
+
+	<br/>
+	
+	<form action="simple">
+    	<input type="submit" value="Give it a try!" />
+	</form>
+	<br/>
+	
+</div>
+
+<br/>
+
+<div class = 'bloc2'>
+	<br/>
+<h1 class='description_titles'>How it works</h1>
+
+	<p>Our colorization algorithm is based on neural networks trained on more than 10000 images.</p>
+	<p>At ColorizX, we use Deep Learning to automatically colorize your Black and White pictures. </p>
+	<br/>
+
+	<a href="/uploads/how_it_works/">Find more details here</a>
+	
+</div>
+
+<br/>
+<br/>
+
+<div class = 'bloc1'>
+	<br/>
+<h1 class='description_titles'>What's to come</h1>
+
+	<p>So far we've been focusing on colorizing portraits of people. </p>
+	<p>We are currently training our algorithms on a much broader scope of images, and you will soon be able to colorize your landscape or animal pictures. </p>
+	<br/>
+</div>
+
+<br/>
 <hr>
+<br/>
 
-<h2>What else we do?</h2>
-<p>Some cool stuff.</p>
-<p>
-Some cool stuff.
-</p>
-<p>
-<strong>FAT TEXT:</strong> Some cool stuff
-</p><p>
-</p></p>
+<h1 class='description_titles'>Some cool examples</h1>
+<br/>
 
-	<p>Django сейчас процветающий фреймворк с тысячами пользователей и aslkmfslfm контрибьюторов. Несмотря на то, что в нем остались функции, которые указывают на его происхождение, Django превратился в универсальный фреймворк, который способен разрабатывать любые типы сайтов.</p>
+</div>
 
-<hr>
-<h2>And finally?</h2>
-<p>
-Some cool stuff.
-</p>
-<p>
-How to make a list:
-</p>
-<ul>
-	<li><strong>List 1:</strong> Some cool stuff.</li>
-	<li><strong>List 2:</strong> Some cool stuff.</li>
-	<li><strong>List 3:</strong> Some cool stuff.</li>
-	<li><strong>List 4:</strong> Some cool stuff.</li>
-</ul>
+<div class = 'bloc2'>
+	<br/>
+		<img title="Autocolorized picture" src="http://image.noelshack.com/fichiers/2018/42/4/1539872787-colorized.jpg"/>
 
+</div>
 
+</body>
 
-
-
-	<div id="attachment_965" class="wp-caption aligncenter">
-
-		<a href="https://mdn.mozillademos.org/files/13931/basic-django.png" class="grouped_elements" rel="tc-fancybox-group964">
-
-			<img class=" wp-image-965 " title="Le protocole HTTP, en gros" src="https://mdn.mozillademos.org/files/13931/basic-django.png" width="1023" height="666" align="center" />
-		</a>
-
-
-	</div>
-
-
-</section>
 {% endblock %}
