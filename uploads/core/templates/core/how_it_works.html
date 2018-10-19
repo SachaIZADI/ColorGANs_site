@@ -61,10 +61,11 @@ How it works
 	<h1>How it works</h1>
 </br>
 
-<p>Our website uses an API that sends your black and white picture to the ColorGAN package hosted on GitHub.
-    This package contains a pre-trained model and your picture goes through a predict
+<p>Our website uses an API that sends your black and white picture to the ColorGAN package hosted on GitHub.</p>
+
+    <p>This package contains a pre-trained model and your picture goes through a predict
     function that outputs the colorised image. This colorised image is returned to you and you can now use it to show 
-    your friends and family.
+    your friends and family.</p><p>
     The package makes use of a common deep learning algorithm: conditional Generative Adversarial Networks. 
 </p>
 
@@ -77,8 +78,9 @@ How it works
 <h1>Generative Adversarial Networks</h1>
 <p>Generative Adversarial Networks (GAN) are a class of deep learning methods.
     It consists of two networks that are in competition with each other in a game theory scenario.
-    The first network, the generator, generates an image while the second, the discriminator, needs to detect
-    whether the input image is real or generated. 
+    </p><p> The first network, the generator, generates an image while the second, the discriminator, needs to detect
+    whether the input image is real or generated. </p>
+    <p>
     In our case, we are working with a conditional GAN that is the generator is given an input black and white image 
     from which to generate the colored image.  
 </p>
@@ -97,10 +99,13 @@ How it works
 
     </div>
     
+<br>
 
 <p> The Generator's job is to learn how to produce real looking colorized versions so that the 
-    Discriminator can't distinguish between the generated image and the real one.
-    The Discriminator needs to keep up with the Generator in order not to be fooled by its improvements.
+    Discriminator can't distinguish between the generated image and the real one.</p>
+    <p>
+    The Discriminator needs to keep up with the Generator in order not to be fooled by its improvements.</p>
+    <p>
     Eventually, the Generator learns well the underlying distribution of color images data and 
     is really good at generating colorised versions of black and white images.
 </p>
@@ -115,7 +120,13 @@ How it works
             src="https://www-tc.pbs.org/wgbh/nova/media/images/lfw-sample.width-800.jpg?fbclid=IwAR3m4v80e95_Xcbtj6PyWFvxyoG77hvSms2qqfrjmpgpFmxqIOt0QTmtyC8"
             align="center" width="1100" height="600"/>
 
-<p> </p>
+<br>
+<br>
+<p>
+	The data set contains more than 13,000 images of faces collected from the web. Each face has been labeled with the name of the person pictured.</p>
+	<p> 1680 of the people pictured have two or more distinct photos in the data set. The only constraint on these faces is that they were detected by the Viola-Jones face detector.
+
+</p>
 </br>
 <div class='bloc1'>
 </br>
@@ -128,7 +139,8 @@ How it works
 </p>
 </br>
 <p> Our model was trained on a library of more than 10 000 human portraits. The loss used is Binary Cross Entropy 
-    for both the Generator and Discriminator to which we add a L1 loss for the Generator to obtain sharper images. 
+    for both the Generator and Discriminator to which we add a L1 loss for the Generator to obtain sharper images. </p>
+    <p>
     The models were trained using an Adam optimizer  of learning rate 1e-4 and 1e-3 respectively. 
     The final layers of our neurals network are shown below.
 </p>
