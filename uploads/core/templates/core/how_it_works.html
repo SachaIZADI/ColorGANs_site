@@ -31,13 +31,34 @@ How it works
         margin-left: auto;
         margin-right: auto;
         width: 55%;
-    }   
+    } 
+
+    .layer4 {
+	border: solid 1px black;
+	border-radius: 10%;
+	/*display: block;
+	margin-right: auto;
+	margin-left: auto;*/
+	width: 300px;
+	height: 200px;
+   }  
+
+   .layer5 {
+	border: solid 1px black;
+	border-radius: 10%;
+	/*display: block;
+	margin-right: auto;
+	margin-left: auto;*/
+	width: 650px;
+	height: 400px;
+   }  
 </style>
 
 <div class='text'>
 
-<div class='bloc1'>
-</br>
+<!-- <div class='bloc1'> -->
+	<!-- </br> -->
+	<h1>How it works</h1>
 </br>
 
 <p>Our website uses an API that sends your black and white picture to the ColorGAN package hosted on GitHub.
@@ -48,9 +69,11 @@ How it works
 </p>
 
 </br>
-</div>
+<!-- </div> -->
 
 
+<div class='bloc1'>
+	<br>
 <h1>Generative Adversarial Networks</h1>
 <p>Generative Adversarial Networks (GAN) are a class of deep learning methods.
     It consists of two networks that are in competition with each other in a game theory scenario.
@@ -62,9 +85,13 @@ How it works
 
 <div id="attachment_965" class="wp-caption aligncenter">
 
-            <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+			<!-- <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
             src="http://image.noelshack.com/fichiers/2018/42/4/1539872741-screen-shot-2018-10-18-at-15-35-16.png"
-            width="800" height="400" align="center" />
+            width="800" height="400" align="center" /> -->
+
+            <img class="layer5" title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/5/1539941385-1539872741-screen-shot-2018-10-18-at-15-35-16.png?fbclid=IwAR3axydhqHoaiLAeHoQCyZCTdIMA8WdqRfmOhXNoKPtos8wrKnpR0qw_qVs"
+            width="800" height="400" align="center" /> 
 		</a>
 
 
@@ -79,14 +106,34 @@ How it works
 </p>
 </br>
 
+</div>
+
+<h1>Our Data</h1>
+
+
+<img title="Le protocole HTTP, en gros" 
+            src="https://www-tc.pbs.org/wgbh/nova/media/images/lfw-sample.width-800.jpg?fbclid=IwAR3m4v80e95_Xcbtj6PyWFvxyoG77hvSms2qqfrjmpgpFmxqIOt0QTmtyC8"
+            align="center" width="1100" height="600"/>
+
+<p> </p>
+</br>
 <div class='bloc1'>
 </br>
-<h1>Our model</h1>
+<h1>Our Model</h1>
+</br>
+<p>
+	<img class="layer4" title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/5/1539943464-44464933-610070852728922-544077605129682944-n.jpg?fbclid=IwAR0Kk9OJe5LGC9vc0ZcZmw5cT2hyj_vvASvJPICZyEj5o8Z0nuILWxvwjRU"
+            align="center" />
+</p>
+</br>
 <p> Our model was trained on a library of more than 10 000 human portraits. The loss used is Binary Cross Entropy 
     for both the Generator and Discriminator to which we add a L1 loss for the Generator to obtain sharper images. 
     The models were trained using an Adam optimizer  of learning rate 1e-4 and 1e-3 respectively. 
     The final layers of our neurals network are shown below.
 </p>
+
+
 </br>
 </div>
 </br>
@@ -94,19 +141,82 @@ How it works
 <div id="attachment_965" class="wp-caption aligncenter">
 
             <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
-            src="http://image.noelshack.com/fichiers/2018/42/4/1539879683-screen-shot-2018-10-18-at-18-20-59.png"
+            src="http://image.noelshack.com/fichiers/2018/42/5/1539943026-screen-shot-2018-10-19-at-11-56-30.png?fbclid=IwAR3s0aARp-Q-t7Pjd4wpd2tNRfyPEecJ4LUDPIt2OpJP5oo2UY7OdN3cHyo"
             width="900" height="550" align="center" />
 
+            <!-- <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/4/1539879683-screen-shot-2018-10-18-at-18-20-59.png"
+            width="900" height="550" align="center" /> -->
+
 </div>
 </br>
 <div id="attachment_965" class="wp-caption aligncenter">
 
             <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
-            src="http://image.noelshack.com/fichiers/2018/42/4/1539879497-screen-shot-2018-10-18-at-18-17-59.png"
+            src="http://image.noelshack.com/fichiers/2018/42/5/1539943018-screen-shot-2018-10-19-at-11-56-05.png?fbclid=IwAR1a9W3cMGq6LzsyyavASCq-axQT2u4Rw_d-r4tVV5VES1WNYFe730rsOPM"
             width="700" height="500" align="center" />
+
+            <!-- <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/4/1539879497-screen-shot-2018-10-18-at-18-17-59.png"
+            width="700" height="500" align="center" /> -->
 
 </div>
 
+<div class='bloc1'>
+</br>
+<h1>Training Loss</h1>
+</br>
+<p>
+	<img title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/5/1539947421-loss.png?fbclid=IwAR2N04XAR716VQJPcUrkKX07pNNllIgbYoOyNEoANwSUUOVI2-fCWGO4poY"
+            align="center" width="800" height="400"/>
+</p>
+<!-- </br> -->
+<!-- <p> 
+	<h3>Training Loss</h3>
+</p> -->
+
+
+</br>
+</div>
+
+
+
+<h1>Output of our Model</h1>
+<!-- <p>
+	Some stuff here 2
+</p> -->
+<br>
+
+<div id="attachment_965" class="wp-caption aligncenter">
+
+			<!-- <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/4/1539872741-screen-shot-2018-10-18-at-15-35-16.png"
+            width="800" height="400" align="center" /> -->
+
+            <img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/5/1539947871-untitled-drawing.jpg?fbclid=IwAR2tVWmpw4aldOO8fPMIGhp_-D8rSaK5eHotbZfz0xLP5Dpp7EKnu0-32Co"
+            width="500" height="150" align="center" /> 
+		</a>
+
+
+    </div>
+    
+</br>
+<br>
+<p> On the left of the picture you can see an initial photo of Heidi Klum and Seal. We input the B&W version and obtain a coloured image afterwards.
+</p>
+</br>
+
+<h2>
+	Other examples
+</h2>
+<br>
+	<img class=" wp-image-965 " title="Le protocole HTTP, en gros" 
+            src="http://image.noelshack.com/fichiers/2018/42/5/1539943340-leaders.jpg?fbclid=IwAR2N04XAR716VQJPcUrkKX07pNNllIgbYoOyNEoANwSUUOVI2-fCWGO4poY"
+            width="900" height="700" align="center" /> 
+
+<p></p>
 </div>
 
 {% endblock %}
