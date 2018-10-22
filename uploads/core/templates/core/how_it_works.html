@@ -61,23 +61,51 @@ How it works
 	<h1>How it works</h1>
 </br>
 
-<p>Our website uses an API that sends your black and white picture to the ColorGAN package hosted on GitHub.</p>
-
-    <p>This package contains a pre-trained model and your picture goes through a predict
-    function that outputs the colorised image. This colorised image is returned to you and you can now use it to show 
-    your friends and family.</p><p>
-    The package makes use of a common deep learning algorithm: conditional Generative Adversarial Networks. 
-</p>
+    <p> Our colorizer algorithm is based on the <a href="https://phillipi.github.io/pix2pix/"> pix2pix </a> model from UC Berkeley.</p>
+    <p> We adapted the architecture of the neural network for our project, coded the algorithm in TensorFlow and in PyTorch, wrapped it into a Flask API before serving it as a microservice through Google Cloud.</p>
+    <p>The model relies on a cGAN (conditional Generative Adversarial Network) to learn a mapping between the space of grayscale images to colored images.</p>
 
 </br>
 <!-- </div> -->
 
-
 <div class='bloc1'>
+    <br/>
+    <h1>Framing the problem</h1>
+    <p>The problem consists in learning a mapping between the space of grayscale images (NxNx1 tensors) to the space of RGB images (NxNx3 tensors). </p>
+    <p>
+        <img class="layer4" title="Le protocole HTTP, en gros"
+                src="http://image.noelshack.com/fichiers/2018/43/1/1540242905-untitled-drawing-1.png"
+                align="center" />
+     </p>
+    <br/>
+    <br/>
+
+    <p>
+        To do so, we train a neural network to colorize a black and white image.
+    </p>
+    <p>
+        To put it in simple words, it is trained to learn to "color inside the lines" and to give plausible colors (i.e. green is not a plausible color for a face, unless you live in a galaxy far far away...).
+    </p>
+    <p>
+        In a way, it's a bit like teaching a child to draw!
+    </p>
+    <p>
+	    <img class="layer4" title="Le protocole HTTP, en gros"
+            src="http://image.noelshack.com/fichiers/2018/42/5/1539943464-44464933-610070852728922-544077605129682944-n.jpg?fbclid=IwAR0Kk9OJe5LGC9vc0ZcZmw5cT2hyj_vvASvJPICZyEj5o8Z0nuILWxvwjRU"
+            align="center" />
+    </p>
+    <br/>
+</div>
+
+
+
+
+<div class='bloc2'>
 	<br>
-<h1>Generative Adversarial Networks</h1>
-<p>Generative Adversarial Networks (GAN) are a class of deep learning methods.
-    It consists of two networks that are in competition with each other in a game theory scenario.
+<h1> Conditional Generative Adversarial Networks</h1>
+    TBC
+<p>Generative Adversarial Networks (GAN) are a class of deep learning models.
+    It consists in two networks that are in competition with each other in a game theory scenario.
     </p><p> The first network, the generator, generates an image while the second, the discriminator, needs to detect
     whether the input image is real or generated. </p>
     <p>
