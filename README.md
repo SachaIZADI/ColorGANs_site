@@ -14,7 +14,7 @@ The latest version of the website is available on <href> https://color-gan-x.her
 * Link the API to the website.
 
 
-<img src = "media/home_page.png" height="200">
+<img src = "media/home_page.png" height="500">
 
 
 
