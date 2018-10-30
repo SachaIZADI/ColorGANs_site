@@ -1,128 +1,109 @@
 {% extends "base.html" %}
 
 {% block title %}
-About Us.
+    About Us.
 {% endblock %}
 
 {% block content %}
-<!-- <style type="text/css"></style> --><!-- 
-<link href="styles/layout.css" rel="stylesheet" type="text/css" media="all"> -->
+
+
 <style>
 	.layer2 {
 	border-radius: 50%;
 	height: 100%
 	vertical-align: middle;
-   }
+    }
 
-   #left_block{
+    #left_block{
    	width: 100%;
    	height: 180px;
-   }
+    }
 
-   .description_titles {
+    .description_titles {
 		color: #050404;
 		font-family: sans-serif;
 		text-align:center;
-	}	
+    }
 
-	.text {
+    .text {
 		color: #181818;
 		font-family: sans-serif;
 	}
 
 	.bloc1 {
 		background-color:#DCD5D5;
-	}	
+    }
 
 	.bloc2 {
-		background-color:##FAF8F8;
-
+		background-color:#FAF8F8;
 	}
 
    	h4 a {
     /*color: #FCA205;*/
     font-family: 'Lobster';
-
 	}
 
 </style>
 
 
 
+
 <body bgcolor = "#FAF8F8">
 
-<div class = 'text'>
+    <div class = 'text'>
 
-<h1 class='description_titles'>Our Team</h1>
+    <h1 class='description_titles'>Our Team</h1>
 
-<div id="left_block" class='bloc1'>
-<p>
-	<br/>
-	<img src="https://media.licdn.com/dms/image/C4D03AQFeKrwfS-shkQ/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=3y2SVnAJzRE9zZA6i8k1ljfsauIoPvSPYUV6cy8NrTk" width="150" align="left" class="layer2" hspace="20"> 
-	<h4><a href="https://www.linkedin.com/in/mathilde-duverger/" class = 'description_titles'>Mathilde Duverger</a> </h4>
+        <div id="left_block" class='bloc1'>
+            <br/>
+            <img src="https://media.licdn.com/dms/image/C4D03AQFeKrwfS-shkQ/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=3y2SVnAJzRE9zZA6i8k1ljfsauIoPvSPYUV6cy8NrTk" width="150" align="left" class="layer2" hspace="20">
+            <h4><a href="https://www.linkedin.com/in/mathilde-duverger/" class = 'description_titles'>Mathilde Duverger</a></h4>
+            <p>X HEC Data Science for Business</p>
+            <p>Experience in video games industry and consumer goods</p>
+            <i>Contact: mathilde.duverger@polytechnique.edu / mathilde.duverger@hec.edu</i>
+        </div>
 
-	<p>X HEC Data Science for Business</p> 
-	<p>Experience in video games industry and consumer goods</p>
-	<i>Contact: mathilde.duverger@polytechnique.edu / mathilde.duverger@hec.edu</i>
-</p>
+        <br/>
 
-</div>
-<br/>
-
-<div id="left_block" class='bloc2'>
-<p>
-	<br/>
-	<img src="https://media.licdn.com/dms/image/C4E03AQHlXB4ShGhvqQ/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=5eyO5ajW5hLBZ2_O3Xlv19MCMK-CEXgI7X4v1a3I_Hk" width="150" height="150" align="left" class="layer2" hspace="20"> 
-
-	<h4><a href="https://www.linkedin.com/in/margauxgirardsoppet/" class = 'description_titles'>Margaux Girard-Soppet</a> </h4>
-	<p>X HEC Data Science for Business</p>
-	<p>Passionate about Deep Learning and working on AI</p> 
-	<i>Contact: margaux.girard-soppet@polytechnique.edu / margaux.girard-soppet@hec.edu</i>
-</p>
-</div>
+        <div id="left_block" class='bloc2'>
+            <br/>
+            <img src="https://media.licdn.com/dms/image/C4D03AQEh_Abj8EafqQ/profile-displayphoto-shrink_800_800/0?e=1546473600&v=beta&t=eVCXprfgrPax0-kfWir6SNqZTXR2rsmsf4Z01V2j-rU" width="150" height="150" align="left" class="layer2" hspace="20">
+            <h4><a href="https://www.linkedin.com/in/margauxgirardsoppet/" class = 'description_titles'>Margaux Girard-Soppet</a> </h4>
+            <p>X HEC Data Science for Business</p>
+            <p>Passionate about Deep Learning and working on AI</p>
+            <i>Contact: margaux.girard-soppet@polytechnique.edu / margaux.girard-soppet@hec.edu</i>
+        </div>
 
 
-<div id="left_block" class='bloc1'>
-<p>
-	<br/>
-	<img src="https://media.licdn.com/dms/image/C4D03AQG5uo9Wb1hINA/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=DOm-MkLf7YZMTdKoWsiZpFZiZP2SGDJkQ8VL_HwqgHI" width="150" height="150" align="left" class="layer2" hspace="20"> 
-
-	<h4><a href="https://www.linkedin.com/in/sacha-izadi/" class = 'description_titles'>Sacha Izadi</a> </h4>
-	<p>X HEC Data Science for Business</p> 
-	<p>I'm interested in new opportunities leveraging machine learning at scale, and in the strategic deployment of AI</p>
-
-	<i>Contact: sacha.izadi@polytechnique.edu / sacha.izadi@hec.edu</i>
-</div>
+        <div id="left_block" class='bloc1'>
+            <br/>
+            <img src="https://media.licdn.com/dms/image/C4D03AQG5uo9Wb1hINA/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=DOm-MkLf7YZMTdKoWsiZpFZiZP2SGDJkQ8VL_HwqgHI" width="150" height="150" align="left" class="layer2" hspace="20">
+            <h4><a href="https://www.linkedin.com/in/sacha-izadi/" class = 'description_titles'>Sacha Izadi</a> </h4>
+            <p>X HEC Data Science for Business</p>
+            <p>I'm interested in new opportunities leveraging machine learning at scale, and in the strategic deployment of AI</p>
+            <i>Contact: sacha.izadi@polytechnique.edu / sacha.izadi@hec.edu</i>
+        </div>
 
 
-<div id="left_block" class='bloc2'>
-<p>
-	<br/>
-	<img src="https://media.licdn.com/dms/image/C5603AQEoYXQ4SNIV_w/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=Yrf7JYLsjEicH5Ai8fa4ZHNo7hFyN9aWWOvtp8U8WLs" width="150" height="150" align="left" class="layer2" hspace="20"> 
-
-	<h4><a href="https://www.linkedin.com/in/alexandre-momeni/" class = 'description_titles'>Alexandre Momeni</a> </h4>
-	<p>X HEC Data Science for Business</p>
-	<p>Engineer pursuing his studies in Data Science & Machine Learning</p> 
-	<i>Contact: alexandre.momeni@polytechnique.edu / alexandre.momeni@hec.edu</i>
-</p>
-</div>
+        <div id="left_block" class='bloc2'>
+            <br/>
+            <img src="https://media.licdn.com/dms/image/C5603AQEoYXQ4SNIV_w/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=Yrf7JYLsjEicH5Ai8fa4ZHNo7hFyN9aWWOvtp8U8WLs" width="150" height="150" align="left" class="layer2" hspace="20">
+            <h4><a href="https://www.linkedin.com/in/alexandre-momeni/" class = 'description_titles'>Alexandre Momeni</a> </h4>
+            <p>X HEC Data Science for Business</p>
+            <p>Engineer pursuing his studies in Data Science & Machine Learning</p>
+            <i>Contact: alexandre.momeni@polytechnique.edu / alexandre.momeni@hec.edu</i>
+        </div>
 
 
-<div id="left_block" class='bloc1'>
-<p>
-	<br/>
-	<img src="https://media.licdn.com/dms/image/C4D03AQHXlYpKTjxQRA/profile-displayphoto-shrink_200_200/0?e=1545264000&v=beta&t=oA3L3Mt95X6Z9TPFPngiv9Ga2bP7CbD50THagZwNcGI" width="150" height="150" align="left" class="layer2" hspace="20"> 
-
-	<h4><a href="https://www.linkedin.com/in/valentin-lapparov-21026112b/" class = 'description_titles'>Valentin Lapparov</a> </h4>
-	
-	<p>X HEC Data Science for Business</p>
-	<p>I am interested in Data Science, Machine Learning and related topics</p>
-	<i>Contact: valentin.lapparov@polytechnique.edu / valentin.lapparov@hec.edu</i>
-</p>
-</div>
-
-
-</div>
+        <div id="left_block" class='bloc1'>
+            <br/>
+            <img src="https://media.licdn.com/dms/image/C4D03AQHXlYpKTjxQRA/profile-displayphoto-shrink_200_200/0?e=1545264000&v=beta&t=oA3L3Mt95X6Z9TPFPngiv9Ga2bP7CbD50THagZwNcGI" width="150" height="150" align="left" class="layer2" hspace="20">
+            <h4><a href="https://www.linkedin.com/in/valentin-lapparov-21026112b/" class = 'description_titles'>Valentin Lapparov</a> </h4>
+            <p>X HEC Data Science for Business</p>
+            <p>I am interested in Data Science, Machine Learning and related topics</p>
+            <i>Contact: valentin.lapparov@polytechnique.edu / valentin.lapparov@hec.edu</i>
+        </div>
+    </div>
 </body>
 
 {% endblock %}
